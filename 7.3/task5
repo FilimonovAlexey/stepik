@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+  _Bool flag = 1;
+  int now = 0;
+  int last = -9999;
+  while(now != -9999) {     
+      scanf("%d", &now);
+      if (now <= last && now != -9999) {
+          flag = 0;
+          break;
+      }
+      last = now;
+      
+  }
+    
+  if (flag) printf("YES");
+  else printf("NO");
+
+  return 0;
+}

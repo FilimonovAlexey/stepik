@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+  _Bool flag = 0;
+  int number = 0;
+  while(number != -9999) {     
+      scanf("%d", &number);
+      if (number == -9999) break;
+      if (flag) printf("%d ", number);
+      if (number == 2517) flag = 1;
+  }
+    
+  
+  return 0;
+}

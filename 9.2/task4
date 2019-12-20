@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    scanf("%s", str);
+    int length = strlen (str);
+    int sum = 0;
+    for (int i=length-1, j=1; i>=0; i--, j*=2){
+        int istr = str[i] - '0';
+        sum += istr * j;
+    }
+    printf ("%d", sum);
+return 0;
+}

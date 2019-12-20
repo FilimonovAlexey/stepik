@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    
+      int k = 0; 
+      char lastSymb = ' ';
+      char symb = 'a';
+    
+    while (1) {   
+          scanf ("%c", &symb);
+          if (symb == '\n') {
+              if ( lastSymb != ' ') k++;
+              break;
+          }     
+          if (symb == ' ' && lastSymb != ' ') k++;
+          lastSymb = symb;
+      }
+    
+    printf ("%d", k);
+
+  return 0;
+}

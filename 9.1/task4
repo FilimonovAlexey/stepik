@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+    
+      char symb = 'a'; 
+      scanf ("%c ", &symb);
+      if (symb > 64 && symb < 91 || symb > 96 && symb < 123) printf ("en");  
+      else if (symb > 47 && symb < 58) printf ("digit");  
+      else printf ("error");  
+
+     
+
+  return 0;
+}

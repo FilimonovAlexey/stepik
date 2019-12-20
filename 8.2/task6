@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+  int n = 0;
+  int sum1 = 0;
+  int sum2 = 0;
+  scanf ("%d", &n);
+
+  for (int i=0; i<n; i++) {
+      for (int j=0; j<n; j++){
+          int temp = 0;
+          scanf ("%d", &temp);
+          if (j-i > 0) sum1 += temp;
+          if (n-j-i <= 0) sum2 += temp;
+      }
+  }
+    if (sum1 > sum2) printf ("%d %d", sum2, sum1);
+    else printf ("%d %d", sum1, sum2);
+  return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+  int flag = -1;
+  int sum = 0;
+  int number = 0;
+  while(flag != 1) {     
+      scanf("%d", &number);
+      if (number == 0) flag++;
+      if (flag == 0) sum += number;
+  }
+    
+  printf("%d ", sum);
+    
+  return 0;
+}

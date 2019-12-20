@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  _Bool flag = 1;
+  int number = 1;
+  int index = 0;
+  while(number != -9999) {     
+      scanf("%d", &number);
+      if (number != -9999 && number <= 0 || index == 0 && number == -9999) flag = 0;
+      index++;
+  }
+      
+  if (flag) printf("YES");
+  else printf("NO");
+  
+  return 0;
+}

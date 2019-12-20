@@ -1,0 +1,66 @@
+#include <stdio.h>
+
+int main() {
+    int n = 0;
+    int m = 0;
+    scanf ("%d", &n);
+    scanf ("%d", &m);
+    int arr[n][m];
+    int arrSum [m];
+    
+    for (int i=0; i<m; i++) {
+        arrSum[i] =0;
+    }
+    
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            scanf ("%d", &arr[i][j]);
+        }
+    }
+    
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            arrSum [j] += arr[i][j];
+        }
+    }
+    
+    int sumMin = 9999;
+    int indexMin = 0;
+    int sumMax = -9999;
+    int indexMax = 0;
+    
+    for (int i=0; i<m; i++) {
+        if (arrSum[i] < sumMin) {
+            sumMin = arrSum[i];
+            indexMin = i;
+        }
+        if (arrSum[i] > sumMax) {
+            sumMax = arrSum[i];
+            indexMax = i;
+        }
+    }
+    
+    int newArr[n][m];
+    
+    for (int i=0; i<n; i++) {
+         for (int j=0; j<m; j++) {
+            newArr[i][j] = arr[i][j];
+         }
+
+    }
+    
+    for (int i=0; i<n; i++) {
+        newArr[i][indexMin] = arr[i][indexMax];
+        newArr[i][indexMax] = arr[i][indexMin];
+    }
+    
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<m; j++) {
+            printf ("%d ", newArr[i][j]);
+        }
+        printf ("\n");
+    }
+    
+
+    return 0;
+}

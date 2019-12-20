@@ -1,0 +1,23 @@
+#include <stdio.h>
+ 
+int main() {
+  int x=0, y=0, vector, N;
+    char str[5];
+    scanf("%d",&N);
+    for(int i=0;i<N;++i){
+        scanf("%s %d", &str, &vector);
+        if(strcmp(str, "East") == 0)
+            x+=vector;
+        else {
+            if(strcmp(str, "West") == 0)
+            x-=vector;
+        else {
+            if(strcmp(str, "North") == 0)
+            y+=vector;
+        else if(strcmp(str, "South") == 0)
+            y-=vector;
+            }
+        }
+    }
+    printf("%d %d", x, y);
+}

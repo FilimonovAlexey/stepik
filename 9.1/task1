@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+  char symb = "a";
+  scanf ("%c", &symb);
+  printf ("%c", symb-32);
+  return 0;
+}

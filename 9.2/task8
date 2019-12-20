@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    int flag = 1;
+    int indexBeg = -1;
+    int indexEnd = 0;
+    char str[100];
+    scanf ("%[^\n]%*c", &str);
+    for (int i=0; i<strlen (str); i++) {
+        if (str[i] == '/' && str[i+1] == '*') {
+            indexBeg = i;
+            break;
+        }
+    }
+    for (int i=indexBeg; i<strlen (str); i++) {
+        if (str[i] == '*' && str[i+1] == '/' && i > indexBeg) {
+            indexEnd = i+1;
+            break;
+        }
+    }
+    for (int i=0; i<strlen (str); i++) {
+        if (i == indexBeg && indexEnd!=0 && indexEnd-indexBeg !=2 && indexBeg != -1) flag = 0;
+        if (flag) printf ("%c", str[i]);
+        if (i == indexEnd) flag = 1;
+    }
+    return 0;
+}

@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main() {
+    
+      int k = 0; 
+      while (1) {
+          char symb = 'a';
+          scanf ("%c", &symb);
+          if (symb == '\0') break;
+          k++;
+      }
+    
+    printf ("%d", k);
+
+  return 0;
+}

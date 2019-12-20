@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    
+      int index = -1; 
+      char searchSymb = 'a';
+      scanf ("%c\n", &searchSymb);
+      char symb = 'a';
+      int counter = 0;
+      
+    while (1) {   
+          scanf ("%c", &symb);
+          if (symb == '\n') break;
+          if (symb == searchSymb) index = counter;
+          counter++;
+    }
+
+    printf ("%d", index);
+
+  return 0;
+}

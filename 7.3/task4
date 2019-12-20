@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  int n = 0;
+  int index = 0;
+  scanf("%d", &n);
+  int now = 0;
+  int last;
+  while(index < n) {     
+      scanf("%d", &now);
+      if (now != last) printf("%d ", now);
+      last = now;
+      index++;
+  }
+
+  return 0;
+}

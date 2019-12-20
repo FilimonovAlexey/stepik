@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main() {
+  int multMain = 1;
+  int multAnti = 1;
+  int n = 0;
+  scanf ("%d", &n);
+  if (n==1) {
+      printf ("%d %d", multAnti, multMain);
+      return 0;
+  }
+  int arr[n*n];
+  for (int i=0; i<n*n; i++) {
+      scanf ("%d", & arr[i]);
+  }
+  for (int i=0; i<n*n; i+=n+1) {
+      multMain *= arr[i];
+  }
+  for (int i=n-1; i<=n*n-n; i+=n-1) {
+      multAnti *= arr[i];
+  }
+    if (multMain > multAnti) printf ("%d %d", multMain, multAnti);
+    else printf ("%d %d", multAnti, multMain);
+
+  return 0;
+}

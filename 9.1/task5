@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+    
+      int k = 0; 
+      scanf ("%d", &k);
+      k--;
+      printf ("%c%c", k+'A', k+'a');  
+
+     
+
+  return 0;
+}

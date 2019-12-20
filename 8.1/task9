@@ -1,0 +1,32 @@
+#include <stdio.h>
+
+int main() {
+  int n = 0;
+  scanf ("%d", &n);
+  int min = 9999;
+  int max = 0;
+  int indexMin = 0;  
+  int indexMax = 0;
+
+  int arr[n];
+    
+  for (int i=0; i<n; i++) {
+      scanf ("%d", &arr[i]);
+      if (arr[i] > max) {
+          max = arr[i];
+          indexMax = i;
+      }
+      if (arr[i] < min) {
+          min = arr[i];
+          indexMin = i;
+      }
+  }
+  
+  arr[indexMin] = max;
+  arr[indexMax] = min;
+   
+  for (int i=0; i<n; i++) {
+      printf ("%d ", arr[i]);
+  }
+  return 0;
+}

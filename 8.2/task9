@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    int n = 0;
+    int k = 0;
+    scanf ("%d", &n);
+    int arr[n][n];
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<n; j++) {
+            scanf ("%d", &arr[i][j]);
+        }
+    }
+    
+    scanf ("%d", &k);
+    
+    if (k>n) k %= n;
+    
+    int newArr[n][n];
+        
+    for (int i=0; i<n; i++) {
+        
+         for (int j=0; j<n; j++) {
+             if (j+k >= n) newArr[i][j+k-n] = arr[i][j];
+             else newArr[i][j+k] = arr[i][j];
+         }
+
+    }
+    for (int i=0; i<n; i++) {
+        for (int j=0; j<n; j++) {
+            printf ("%d ", newArr[i][j]);
+        }
+        printf ("\n");
+    }
+    return 0;
+}

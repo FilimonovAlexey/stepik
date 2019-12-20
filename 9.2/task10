@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    char str[100];
+    scanf ("%s", &str);
+    int flag = 0;
+    for (int i=0; i<strlen (str); i++) {
+        if ((str[i] < 48 || str[i] > 58) && str[i] != '.'  && str[0] != '-' && str[0] != '+') {
+            flag = 3;
+            break;
+        }
+        if (str[i] == '.') {
+            flag++;
+            if ((i == strlen (str)-1 || i == 0 ) || (str[i-1] == '+' || str [i-1] =='-')) flag++;
+        }
+    }
+    if (flag == 1) printf ("float");
+    else if (flag == 0) printf ("int");
+    else printf ("error");
+    
+    return 0;
+}

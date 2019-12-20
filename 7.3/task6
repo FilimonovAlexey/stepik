@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+  int res = 0;
+  int index = 1;
+  int now = 0;
+  int last = -9999;
+  while(now != -9999) {     
+      scanf("%d", &now);
+      if (now <= last && now != -9999) {
+          res = index;
+          break;
+      }
+      last = now;
+      index++;
+      
+  }
+    
+  printf("%d", res);
+
+  return 0;
+}
