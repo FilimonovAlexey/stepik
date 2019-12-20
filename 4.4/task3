@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main() {
+  int n=0, e=0;
+  scanf("%d%d", &n, &e);
+  srand(time(NULL));
+  int rand_digit = n + rand()%(e-n);
+  printf("%d\n",rand_digit);
+  return 0;
+}

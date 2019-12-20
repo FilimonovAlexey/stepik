@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+  double a=0, b=0;
+  scanf("%lf%lf", &a, &b);
+  double res = 3.14159265358979323846 * b * b * 100 - 3.14159265358979323846 * a * a * 100;
+  printf("%.0lf %.2lf", b-a, res);
+  return 0;
+}

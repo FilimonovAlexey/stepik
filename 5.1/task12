@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  double e=1;
+  double factorial=1;
+  for (double i=1; i<6; i++)
+  {
+      factorial*=i;
+      e+=1.0/factorial;
+      if (i>2) printf("%.5lf\n", e);
+  }
+  return 0;
+}

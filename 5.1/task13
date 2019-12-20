@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  double e=1;
+  double factorial=1;
+  double x = 0;
+  scanf("%lf", &x);
+  for (double i=1; i<6; i++)
+  {
+      factorial*=i;
+      e+=pow(x, i)/factorial;
+  }
+  double ex = exp(x);
+  printf("%.6lf\n", ex);
+  printf("%.6lf\n", e);
+  return 0;
+}

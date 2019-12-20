@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+  int a=0;
+  scanf("%d", &a);
+  printf("%d %d", a/3600, a%3600/60);
+  return 0;
+}

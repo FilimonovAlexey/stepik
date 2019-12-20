@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  long int x=0;
+  scanf("%i", &x);
+  long long int res = sqrt(4*x*x);
+  printf("%i ", res);
+  printf("%i", res/450);
+  return 0;
+}

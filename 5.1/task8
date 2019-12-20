@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int a=0;
+  scanf("%d", &a);
+  double b=1, c=1;
+  b*=a/1000;
+  c*=a%1000/100;
+  b*=a%100/10;
+  c*=a%10;
+  printf("%.2lf", b/c);
+  return 0;
+}

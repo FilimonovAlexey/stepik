@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  int k=0;
+  scanf("%i", &k);
+  long long int res = pow(2, 30)*k - pow (10, 9)*k;
+  printf("%u", res);
+  return 0;
+}

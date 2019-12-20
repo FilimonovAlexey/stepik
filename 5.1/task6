@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+    int a=0, b=0;
+    double c=0, d=0;
+    scanf("%d%d",&a, &b); 
+    c = (int)(a/b)%10;
+    d = (int)((double)a/b*10)%10;
+    printf("%.0lf %.0lf", c, d);
+  return 0;
+}
