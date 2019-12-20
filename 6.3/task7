@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+  int b;
+  scanf("%d", &b);
+  int res=0;
+  if (b>500) res = 350+(b-500)*2;
+  else res = 350;
+  printf("%d", res);
+  return 0;
+}

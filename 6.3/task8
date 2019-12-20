@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void) {
+  int d,m;
+    scanf("%d%d",&d,&m);
+    switch (m)
+    {
+        case 2:
+            if (1<=d && d<=29)
+                printf("correct");
+            else 
+                printf("error");
+            break;
+        default:
+     if 
+         (1<=d && d<=30 && 1<=m && m<=12)
+         printf("correct");
+     else
+         printf("error");           
+    }
+  return 0;
+}

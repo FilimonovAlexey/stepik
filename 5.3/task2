@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  double d=0, f=0;
+  scanf("%lf%lf", &f, &d);
+  double res = (f * 12 + d) * 25.4 / 1000;
+  printf("%.0lf\'%.0lf\" = %.2lfm.", f, d, res);
+  return 0;
+}

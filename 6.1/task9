@@ -1,0 +1,10 @@
+#include <stdio.h>
+
+int main() {
+  int age=0;
+  scanf("%d", &age);
+  if (age%10==1 && age/10!=1) printf("Мне %d год", age);
+  else if ((age%10==2 || age%10==3 || age%10==4) && age/10!=1) printf("Мне %d года", age);
+  else printf("Мне %d лет", age);
+  return 0;
+}

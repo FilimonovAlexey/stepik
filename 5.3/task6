@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int k=0, x=0;
+  scanf("%d%d", &k, &x);
+  int res=0;
+  for (int i=0; i<4; i++)
+  {
+    res += x % 10 * pow(k, i);
+    x/=10;
+  }
+  printf("%d", res);
+  return 0;
+}

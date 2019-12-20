@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <locale.h>
+
+int main(void) 
+{
+  double a=0, b=0;
+  char s; 
+  scanf("%lf%lf %c", &a, &b, &s);
+  switch (s) 
+  {
+    default  : printf("ERROR!"); break;
+    case '+' : printf("%.2lf", a+b); break;
+    case '-' : printf("%.2lf", a-b); break;
+    case '*' : printf("%.2lf", a*b); break;
+    case '/' : printf(b==0 ? "ERROR!" : "%.2lf", a/b); break;
+  }
+  return 0;
+}

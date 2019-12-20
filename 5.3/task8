@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+int main() {
+  int k=0, x=0, y=0;
+  scanf("%d%d%d", &k, &x, &y);
+  printf("%d %d", x%k, y%k);
+  return 0;
+}

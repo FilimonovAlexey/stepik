@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  double k=0;
+  scanf("%lf", &k);
+  double res = 7.5 * 10 * exp(-1 * log(2) / 5570 *k);
+  printf("%.2lf", res);
+  return 0;
+}

@@ -1,0 +1,10 @@
+#include <stdio.h>
+#include <math.h>
+
+int main() {
+  int k=0;
+  scanf("%d", &k);
+  int res = pow(2, (k/3));
+  printf("%d", res);
+  return 0;
+}

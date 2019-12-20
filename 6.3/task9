@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+  int d=0;
+  scanf("%d",&d);
+  if (d<7) printf("дошкольник");
+  if (d>=7 && d<19) printf("школьник");
+  if (d>=19 && d<60) printf("рабочий");
+  if (d>=60) printf("пенсионер");
+  return 0;
+}
+

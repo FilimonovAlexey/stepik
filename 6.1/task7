@@ -1,0 +1,22 @@
+#include <stdio.h> 
+
+int main(void){
+  int m, d;
+  scanf("%d%d", &m, &d);
+  switch (m) 
+  {
+    case 1 : printf("%d", d); break;
+    case 2 : printf("%d", d+31); break;
+    case 3 : printf("%d", d+31+28); break;
+    case 4 : printf("%d", d+31+28+31); break;
+    case 5 : printf("%d", d+31+28+31+30); break;
+    case 6 : printf("%d", d+31+28+31+30+31); break;
+    case 7 : printf("%d", d+31+28+31+30+31+30); break;
+    case 8 : printf("%d", d+31+28+31+30+31+30+31); break;
+    case 9 : printf("%d", d+31+28+31+30+31+30+31+31); break;
+    case 10 : printf("%d", d+31+28+31+30+31+30+31+31+30); break;
+    case 11 : printf("%d", d+31+28+31+30+31+30+31+31+30+31); break;
+    case 12 : printf("%d", d+31+28+31+30+31+30+31+31+30+31+30); break;
+  }
+  return 0;
+}
