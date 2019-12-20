@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main() {
+  int n=0;
+  scanf("%d", &n);
+  int k=1;
+  int i=1;
+  while (k<n) {
+      k*=2;
+      if (k>=n) break;
+      i++;
+  }
+  printf("%d", i);
+  return 0;
+}

@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main() {
+  int k=0, res=1;
+  scanf("%d", &k);
+  for (int i=1; i<=k; i++) {
+      res*=i;
+  }
+  printf("%d", res);
+  return 0;
+}

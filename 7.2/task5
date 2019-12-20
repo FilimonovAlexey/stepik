@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int max=-9999;
+  int temp=0;
+  int min=9999;
+  do {
+  scanf("%d", &temp);
+  if (temp>=max && temp!=0) max=temp;
+  if (temp<=min && temp!=0) min=temp; 
+  } while (temp!=0);
+  printf("%d %d", max, min);
+  return 0;
+}

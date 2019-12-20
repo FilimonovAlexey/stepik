@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+  int a = 0, b = 0;
+  int d = 0;
+
+  scanf("%d %d", &a, &b);
+    
+  if (a > b) d = a;
+  else d = b;
+    
+  while(d%a!=0 || d%b!=0){
+    d++;
+  }
+    
+  printf("%d\n", d);
+
+  return 0;
+}

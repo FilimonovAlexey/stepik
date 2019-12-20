@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main() {
+  int n=0;
+  scanf("%d", &n);
+  int k=1;
+  for (int i=1; ;i++) {
+      k*=2;
+      if (k<=n) printf("%d ", i);
+      else break;
+  }
+  
+  return 0;
+}

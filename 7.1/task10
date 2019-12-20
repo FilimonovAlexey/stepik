@@ -1,0 +1,16 @@
+#include <stdio.h> 
+#include <math.h>
+
+   int main() { 
+   int n, res; 
+       scanf("%d",&n); 
+        for(int i=2; i <= sqrt(n); i++) {
+            res=n%i;
+            if (res == 0 && i != n) {
+                printf ("0");
+                return 0;
+            }
+         }
+       printf ("1");
+       return 0; 
+}

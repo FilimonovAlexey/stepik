@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main() {
+  int n=0;
+  scanf("%d", &n);
+  for (int i=1; i<=n; i*=2)
+  {
+      if (i==n) {printf("YES"); return 0;}
+  }
+  printf("NO");
+  return 0;
+}

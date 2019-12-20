@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main() {
+  int n=0;
+  int x=1, y=0;
+  scanf("%d", &n);
+  for (int i=0; i<n; i++) {
+      x += y;
+	  y =x-y;
+  }
+    printf("%d", y);
+  return 0;
+}
