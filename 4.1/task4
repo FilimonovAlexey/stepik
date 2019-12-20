@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main() {
+  int n=0, m=0;
+  double k=0;
+  scanf("%d%d%lf", &n, &m, &k);
+  printf("%.2lf", (m-n)*k);
+  return 0;
+}

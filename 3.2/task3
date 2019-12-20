@@ -1,0 +1,9 @@
+#include <stdio.h>
+
+int main(void){
+  int rub;
+  double kurs, dollars;
+  scanf("%d %lf", &rub, &kurs);
+  printf("%lf\n", rub*kurs);
+  return 0;
+}
