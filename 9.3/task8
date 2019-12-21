@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+  char symb = 'a';
+  char *morse[36] = {".-","-...","-.-.","-..",".","..-.","--.","....","..",".---","-.-",".-..","--","-.","---",".--.","--.-",".-.","...","-","..-","...-",".--","-..-","-.--","--..","-----",".----","..---","...--","....-",".....","-....","--...","---..","----."};
+  while (1) {
+     scanf ("%c", &symb);
+     if (symb == '\n') break;
+     symb = tolower (symb);
+     if (symb == ' ') printf ("|:_..._:|");
+     else if (symb > 47 && symb <58) printf ("%s|", morse[symb-'0'+27]);
+     else printf ("%s|", morse[symb-'a']);
+  }  
+  
+  return 0;
+}

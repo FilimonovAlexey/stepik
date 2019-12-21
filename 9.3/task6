@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main() {
+  char symb = 'a';
+  int sum1 = 0, sum2 = 0, count = 0;
+  
+  while (count < 6) {
+     scanf ("%c", &symb);
+     if (count < 3 ) sum1 += (int)symb - '0';
+     else sum2 += (int)symb - '0';
+     count++;
+  }
+    
+  printf ( sum1 == sum2 ? "yes" : "no");
+    
+  return 0;
+}

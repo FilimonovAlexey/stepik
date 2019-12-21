@@ -1,0 +1,32 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+  char symb = 'a';
+  int arr1[27] = {0}, arr2[27] = {0};
+  while (symb != '\n') {
+     scanf ("%c", &symb);
+     arr1[symb-'a']++;
+  }
+    
+  symb = 'a';
+    
+  while (symb != '\n') {
+     scanf ("%c", &symb);
+     arr2[symb-'a']++;
+  }
+    
+  int flag = 1;
+  
+  for (int i=0; i<27; i++) {
+      if (arr1[i] < arr2[i]) {
+          flag = 0;
+          //break;
+      }
+  }
+  
+  printf ( flag ? "yes" : "no");
+    
+  return 0;
+}

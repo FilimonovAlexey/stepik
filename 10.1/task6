@@ -1,0 +1,16 @@
+#include<stdio.h>
+
+int sequence_multipliers(int k){
+   for (int i=1; ; i++) {
+       if (i*(i+1)*(i+2)==k) return i;
+       if (i*(i+1)*(i+2)>k) return -1;
+   }
+}
+
+int main(void){
+    int n = 0;
+    scanf("%d",&n);
+
+    printf("%d",sequence_multipliers(n));
+    return 0;
+}

@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+void print_date(int d, int m, int y, int k){   
+   if (k==0) {
+       printf ("%02d.%02d.%02d", d, m, y%100);
+   }    
+   else if (k==1) {
+       printf ("%02d.%02d.%d", d, m, y);
+   }       
+   else {
+       printf ("%d/%02d/%02d", y, m, d);
+   }
+   return 0;
+}
+
+int main(){ 
+    int day = 0, month = 0, year = 0, form = 0;
+    
+    scanf("%d%d%d%d",&day, &month, &year, &form);
+    
+    print_date(day, month, year, form);
+        
+    return 0;
+}

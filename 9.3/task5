@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+
+int main() {
+    char str1[50] = {0}; 
+    char str2[50] = {0};    
+    
+    scanf("%[^\n]%*c", &str1);
+    scanf("%[^\n]%*c", &str2);
+    
+    for (int i=0; i<strlen(str1); i++) {
+        str1[i] = tolower(str1[i]);
+    }
+    
+    for (int i=0; i<strlen(str2); i++) {
+        str2[i] = tolower(str2[i]);
+    } 
+    
+    if (strcmp (str1, str2) != 0) printf("no");
+    else printf("yes");
+    
+    return 0;
+}
